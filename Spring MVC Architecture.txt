@@ -8,11 +8,13 @@ It uses @Controller and @RequestMapping as default request handlers.
 @Controller annotation defines that a particular class is a controller.
 @RequestMapping annotation maps web requests to Spring Controller methods.
 
-Model: The Model encapsulates the application data(objects).
-View: View renders the model data and generates HTML output that the client’s
-      browser can interpret.
-Controller: The Controller processes the user requests and passes them to the 
-      view for rendering.
+Model: A model can be an object or collection of objects which basically contains the data of the application.
+View:  A view is used for displaying the information to the user in a specific format. Spring supports various 
+       technologies like freemarker, velocity and thymeleaf.
+Controller: It contains the logical part of the application. @Controller annotation is used to mark that class
+       as controller.
+Front Controller: It remains responsible for managing the flow of the web application. DispatcherServlet acts 
+       as a front controller in spring MVC.
 
 Dispatcher Servlet:
 ------------------
